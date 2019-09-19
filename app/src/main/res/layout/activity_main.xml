@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0
+"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF5722"
+                android:gravity="center_horizontal"
+                android:padding="4sp"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFCCBC"
+                android:gravity="center_horizontal"
+                android:padding="4sp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addSixPointsForTeamA"
+                android:text="Touchdown" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addThreePointsForTeamA"
+                android:text="Field Goal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addTwoPointsForTeamA"
+                android:text="Safety" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addOnePointsForTeamA"
+                android:text="Extra point" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF5722"
+                android:gravity="center_horizontal"
+                android:padding="4sp"
+                android:text="Team B" />
+
+            <TextView
+                android:id="@+id/team_B_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFCCBC"
+                android:gravity="center_horizontal"
+                android:padding="4sp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+
+                android:onClick="addSixPointsForTeamB"
+                android:text="Touchdown" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addThreePointsForTeamB"
+                android:text="Field Goal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addTwoPointsForTeamB"
+                android:text="Safety" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="#FF8A65"
+                android:onClick="addOnePointsForTeamB"
+                android:text="Extra point" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FF8A65"
+        android:onClick="resetScore"
+        android:text="Reset"
+        android:layout_marginBottom="95sp"/>
+
+
+</RelativeLayout>
